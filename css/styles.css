@@ -1,0 +1,112 @@
+/*공통사항
+--------------------------------------------*/
+html{font-size: 200%;}
+body{   font-family: "Nanum Brush Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.7 ;
+        color: #142;
+}
+a { text-decoration: none; }
+img {   max-width: 100%;   }
+
+
+  
+
+/* ----Header---- */
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style:  none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a  {
+    color: rgb(248, 0, 136);
+}
+
+.main-nav a:hover {
+    color:rgb(36, 223, 223);
+}
+
+
+
+/*womain */
+#womain{
+    text-align: center;
+}
+
+/* Dis */
+#Dis  {
+    text-align: center;
+}
+
+ /* 이미지를 가로로 정렬하는 스타일 */
+ #projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 가로 정렬을 위해 flex 속성 사용 */
+    justify-content: center; /* 이미지들을 가운데로 정렬 */
+}
+
+/* 각 이미지를 감싸는 div의 스타일 */
+#projects li {
+    margin: 10px; /* 이미지 간격 조절 */
+}
+
+/* about */
+#about-image{
+    opacity: 1;
+    width: 150px; /* 초기 이미지 너비 설정 */
+    height: 150px; /* 초기 이미지 높이 설정 */
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+#about-text {
+    position: absolute; /* 절대 위치 지정 */
+    top: 30%; /* 상단 여백을 뷰포트의 30%로 지정 */
+    left: 35%; /* 좌측 여백을 뷰포트의 35%로 지정 */
+    transform: translate(-50%, -50%); /* 이미지 중앙으로 이동 */
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 0.5s ease; /* 부드러운 투명도 전환을 위한 트랜지션 */
+    font-size: 36px;
+}
+
+
+/* project */
+#projects{
+    text-align: center;
+}
+
+#project-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 36px;
+}
+
+#project-image {
+    opacity: 1;
+    width: 150px; /* 초기 이미지 너비 설정 */
+    height: 200px; /* 초기 이미지 높이 설정 */
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+#p-p{
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    background-size: cover;     /*배경 이미지를 뷰포트에 맞추어 크기 조정 */
+    background-position: center; /*배경 이미지를 가운데 정렬 */
+}
+
+

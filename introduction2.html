@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="css/stylescss2.css">
+    
+</head>
+<body bgcolor="#8EB4E3">
+
+    <div class="wrapper grid">
+        <img class="itme" src="image/itme.jpg" width="540px" >
+        <div class="item big-box">
+            <p class="abme">About Me
+                <li>우병설</li>
+                <li>1998.08.03</li>
+                <li>충청북도 청주시</li>
+            </p>
+            <p class="connact">CONTACT
+                <li>010-8581-8160</li>
+                <li>이메일: b3303923@gmail.com</li>
+            </p>
+
+            <p class="experience">EXPERIENCE</p>
+            <div class="contact-info2">
+                <li>2017 운전면혀증 1종 보통</li>
+                <li>2018 컴퓨터활용능력 2급</li>
+                <li>2023 청주 대학교 졸업</li>
+                <li>2023 TOIEC 650</li>
+            </div>
+
+            <p class="PERSONALITY">PERSONALITY</p>
+            <div class="PERSONALITY-info">
+                <li>MBIT : 실용적인 조력가, 보호형  (ISFJ)</li>
+            </div>    
+        </div>
+    <div>
+            <a>Excel</a>
+            <progress value="20" max="100"></progress>
+        </div>
+        <div>
+            <a>Word</a>
+            <progress value="45" max="100"></progress>
+        </div>
+        <div>
+            <a>Powerpoint</a>
+            <progress value="56" max="100"></progress>
+        </div>
+        <div>
+            <a>Photoshop</a>
+            <progress value="36" max="100"></progress>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="main-nav">
+            <li><a href="main.html">메인</a></li>
+            <li><a href="project.html">프로젝트</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+
+        //experence
+        // li 요소가 포함된 div 요소를 찾습니다.
+        var experienceInfo = document.querySelector('.contact-info2');
+
+        // 초기에는 숨깁니다.
+        experienceInfo.style.display = 'none';
+
+        // p 요소에 마우스를 올리면 보이게 하고, 마우스를 내리면 숨깁니다.
+        document.querySelector('.experience').addEventListener('mouseover', function() {
+            experienceInfo.style.display = 'block';
+        });
+
+        document.querySelector('.wrapper').addEventListener('mouseout', function() {
+            experienceInfo.style.display = 'none';
+        });
+
+        //personality
+        // li 요소가 포함된 div 요소를 찾습니다.
+        var experienceInfo1 = document.querySelector('.PERSONALITY-info');
+
+        // 초기에는 숨깁니다.
+        experienceInfo1.style.display = 'none';
+
+        // p 요소에 마우스를 올리면 보이게 하고, 마우스를 내리면 숨깁니다.
+        document.querySelector('.PERSONALITY').addEventListener('mouseover', function() {
+            experienceInfo1.style.display = 'block';
+        });
+
+        document.querySelector('.wrapper').addEventListener('mouseout', function() {
+            experienceInfo1.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
